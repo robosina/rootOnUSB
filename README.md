@@ -14,6 +14,7 @@ Build the initramfs with USB support, so that USB is available early in the boot
 ```
 $ ./addUSBToInitramfs.sh
 ```
+This line will add some files to /boot folder of micro sd card, which you will tell in there that the boot process will be redirected to USB drive.
 
 ## Step 2
 The second step does not have representation here. The user must prepare a USB drive (preferably USB 3.0, SSD, HDD, or SATA->USB) by formatting the disk as ext4 with a partition. It is easier if you only plug in one USB drive during this procedure. When finished, the disk should show as /dev/sda1 or similar. Note: Make sure that the partition is ext4, as NTSF will appear to copy correctly but cause issues later on. Typically it is easiest to set the volume label for later use during this process.
